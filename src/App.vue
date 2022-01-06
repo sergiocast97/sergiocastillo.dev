@@ -1,6 +1,6 @@
 <template>
     <main :class="isDark ? 'dark' : ''">
-        <div class="transition bg-white scroll-smooth dark:bg-black">
+        <div class="transition bg-white scroll-smooth selection:bg-primary selection:text-black dark:bg-black">
             <div class="h-screen p-8 sm:p-12 lg:p-16">
                 <div class="h-full max-w-screen-xl mx-auto">
                     <div class="flex flex-col justify-between h-full gap-16">
