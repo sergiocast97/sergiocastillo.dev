@@ -4,7 +4,7 @@ const serveStatic = require("serve-static")
 const path = require('path');
 
 // Starting the server and using the dist folder
-app = express();
+let app = express();
 app.use(serveStatic(path.join(__dirname, 'dist')));
 const port = process.env.PORT || 3000;
 app.listen(port);
