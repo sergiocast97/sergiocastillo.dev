@@ -7,16 +7,39 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.svg">
 
-    <!-- Title -->
-    <title>Sergio Castillo</title>
+    <% title = "Sergio Castillo - Dev" %>
+    <% author = "Sergio Castillo" %>
+    <% url = "https://sergiocastillo.dev/" %>
+    <% description = "Hello, I am Sergio. I am a Software Developer and Designer based in Scotland. I work as a Front End Dev at Mission 10, but I'm also developing Quick Studio: A Simplified, Collaborative Music Recording Software." %>
+    <% preview = BASE_URL + "preview.png" %>
+    <% keywords = "Sergio Developer Scotland" %>
+
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    <link rel="canonical" href="<%= url %>"/>
+    <meta name="author" content="<%= author %>">
+    <meta name="keywords" content="<%= keywords %>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:site_name" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:image" content="<%= preview %>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= url %>">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="<%= url %>">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="<%= description %>">
+    <meta name="twitter:image" content="<%= preview %>">
+    <meta name="twitter:image:alt" content="<%= title %>">
     
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- Alpine -->
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
   </head>
   <body>
