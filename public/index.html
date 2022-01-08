@@ -5,17 +5,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.svg">
 
     <% title = "Sergio Castillo" %>
     <% author = "Sergio Castillo" %>
+    <% description = "Hello, I am Sergio. I'm a Software Developer and Designer based in Scotland. I'm a Front End Dev at Mission 10, and also developing Quick Studio: A Simplified, Collaborative Music Recording Software." %>
+    <% keywords = "Sergio Castillo, Sergio, Software Developer, Front End Developer, Front End, Front-End, UI Design, Web Design, Aberdeen, Scotland" %>
     <% url = "https://sergiocastillo.dev/" %>
-    <% description = "Hello, I am Sergio. I am a Software Developer and Designer based in Scotland. I work as a Front End Dev at Mission 10, but I'm also developing Quick Studio: A Simplified, Collaborative Music Recording Software." %>
-    <% preview = BASE_URL + "preview.png" %>
-    <% keywords = "Sergio Castillo Software Developer Aberdeen Scotland Front-End Design Web" %>
+    <% preview = url + "preview.png" %>
+    <% logo = url + "favicon.png" %>
 
+    <!-- Meta Tags -->
     <title><%= title %></title>
     <meta name="description" content="<%= description %>">
+    <link rel="icon" href="<%= BASE_URL %>favicon.svg">
     <link rel="canonical" href="<%= url %>"/>
     <meta name="author" content="<%= author %>">
     <meta name="keywords" content="<%= keywords %>">
@@ -35,8 +37,26 @@
     <meta name="twitter:description" content="<%= description %>">
     <meta name="twitter:image" content="<%= preview %>">
     <meta name="twitter:image:alt" content="<%= title %>">
+
+    <!-- Schema SEO Markup -->
+    <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "Person",
+        "name" : "<%= title %>",
+        "url" : "<%= url %>",
+        "logo" : "<%= logo %>",
+        "image" : "<%= preview %>",
+        "sameAs" : [
+          "https://www.behance.net/sergiocast97",
+          "https://github.com/sergiocast97/",
+          "https://www.linkedin.com/in/sergiocast97",
+          "https://twitter.com/sergiocast97"
+        ]
+      }
+    </script>
     
-    <!-- Font -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
