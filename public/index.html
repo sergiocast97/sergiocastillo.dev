@@ -8,11 +8,11 @@
 
     <% title = "Sergio Castillo" %>
     <% author = "Sergio Castillo" %>
-    <% description = "Hello, I am Sergio. I'm a Software Developer and Designer based in Scotland. I'm a Front End Dev at Mission 10, and also developing Quick Studio: A Simplified, Collaborative Music Recording Software." %>
+    <% description = "Hello, I am Sergio. I'm a Software Developer and Designer based in Scotland. I work as a Front End Dev at Mission 10, and I'm also developing Quick Studio: A Simplified, Collaborative Music Recording Software." %>
     <% keywords = "Sergio Castillo, Sergio, Software Developer, Front End Developer, Front End, Front-End, UI Design, Web Design, Aberdeen, Scotland" %>
     <% url = "https://sergiocastillo.dev/" %>
     <% preview = url + "preview.png" %>
-    <% logo = url + "favicon.png" %>
+    <% logo = url + "favicon.svg" %>
 
     <!-- Meta Tags -->
     <title><%= title %></title>
@@ -64,7 +64,18 @@
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <div style="height: 95vh; display: grid; place-items: center;">
+        <div style="text-align: center;">
+          <h1>I'm Sergio. I do stuff.</h1>
+          <p>Honestly, What are you even doing without JavaScript enabled?</p>
+          <div style="display: flex; justify-content: center; gap: 16px;">
+            <a href="https://www.behance.net/sergiocast97">Behance</a>
+            <a href="https://github.com/sergiocast97/">GitHub</a>
+            <a href="https://www.linkedin.com/in/sergiocast97">LinkedIn</a>
+            <a href="https://twitter.com/sergiocast97">Twitter</a>
+          </div>
+        </div>
+      </div>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->

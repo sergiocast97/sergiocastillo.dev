@@ -13,10 +13,9 @@
                             </button>
 
                             <nav class="flex flex-col gap-2 sm:flex-row sm:gap-12 xl:gap-16" role="navigation">
-                                <a class="text-lg font-semibold text-black transition sm:text-2xl xl:text-4xl dark:text-white hover:text-primary dark:hover:text-secondary" title="My Designs" aria-label="My Designs" href="https://www.behance.net/sergiocast97">Behance</a>
-                                <a class="text-lg font-semibold text-black transition sm:text-2xl xl:text-4xl dark:text-white hover:text-primary dark:hover:text-secondary" title="My Code" aria-label="My Code" href="https://github.com/sergiocast97/">GitHub</a>
-                                <a class="text-lg font-semibold text-black transition sm:text-2xl xl:text-4xl dark:text-white hover:text-primary dark:hover:text-secondary" title="My Work" aria-label="My Work" href="https://www.linkedin.com/in/sergiocast97">LinkedIn</a>
-                                <a class="text-lg font-semibold text-black transition sm:text-2xl xl:text-4xl dark:text-white hover:text-primary dark:hover:text-secondary" title="My Retweets" aria-label="My Retweets" href="https://twitter.com/sergiocast97">Twitter</a>
+                                <a v-for="item in nav_items" :key="item.title" :title="item.description" :aria-label="item.description" :href="item.url" class="text-lg font-semibold text-black transition sm:text-2xl xl:text-4xl dark:text-white hover:text-primary dark:hover:text-secondary">
+                                    {{ item.title }}
+                                </a>
                             </nav>
 
                         </header>
@@ -40,8 +39,17 @@
         name: 'App',
         data(){
             return {
+
                 // Detect whether browser is set to Dark Mode
                 isDark: window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches,
+
+                // Nav Items
+                nav_items: [
+                    { title: "Behance", description: "My Designs", url: "https://www.behance.net/sergiocast97" },
+                    { title: "GitHub", description: "My Code", url: "https://github.com/sergiocast97/" },
+                    { title: "LinkedIn", description: "My Work", url: "https://www.linkedin.com/in/sergiocast97" },
+                    { title: "Twitter", description: "My Retweets", url: "https://twitter.com/sergiocast97" }
+                ]
             }
         }
     }
