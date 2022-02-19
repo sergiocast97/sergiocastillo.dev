@@ -20,5 +20,15 @@ npm run build
 npm run lint
 ```
 
+### Compiles for Server Production
+```
+npm run postinstall
+```
+
+### Run for Server
+```
+npm run start
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
