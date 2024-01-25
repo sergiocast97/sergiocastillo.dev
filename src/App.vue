@@ -1,7 +1,7 @@
 <template>
     <main :class="isDark ? 'dark' : ''">
-        <div class="transition bg-white scroll-smooth selection:bg-primary selection:text-black dark:bg-black">
-            <div class="h-screen p-8 sm:p-12 lg:p-16">
+        <div class="relative transition bg-white scroll-smooth selection:bg-primary selection:text-black dark:bg-black">
+            <div class="relative z-10 h-screen p-8 sm:p-12 lg:p-16">
                 <div class="h-full max-w-screen-xl mx-auto">
                     <div class="flex flex-col justify-between h-full gap-16">
 
@@ -29,6 +29,7 @@
                     </div>
                 </div>
             </div>
+            <div class="absolute bg-noise inset-0 z-0 bg-center bg-repeat bg-[length:100px_100px] opacity-75 pointer-events-none"></div>
         </div>        
     </main>
 </template>
