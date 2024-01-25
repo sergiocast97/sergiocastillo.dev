@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute bg-noise inset-0 z-0 bg-center bg-repeat bg-[length:100px_100px] opacity-75 pointer-events-none"></div>
+            <div class="absolute bg-noise inset-0 z-0 bg-center bg-repeat bg-[length:200px_200px] opacity-25 pointer-events-none"></div>
         </div>        
     </main>
 </template>
