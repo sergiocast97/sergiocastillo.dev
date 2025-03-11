@@ -3,7 +3,7 @@
     <div
       class="relative transition bg-light-background scroll-smooth selection:bg-secondary selection:text-light-darkest dark:bg-dark-darkest"
     >
-      <div class="relative z-10 h-dvh container md:py-12">
+      <div class="relative z-10 h-dvh container py-8 md:py-12">
         <div class="h-full mx-auto">
           <div class="flex flex-col justify-between h-full gap-16">
             <header
@@ -19,7 +19,7 @@
                 <div :class="{ hidden: !isDark }">
                   <svg
                     id="theme-toggle-dark-icon"
-                    class="w-8 h-8 text-light-darkest transition lg:size-12 dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
+                    class="text-light-darkest transition size-12 dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
                 <div :class="{ hidden: isDark }">
                   <svg
                     id="theme-toggle-light-icon"
-                    class="w-8 h-8 text-light-darkest transition lg:size-12 dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
+                    class="text-light-darkest transition size-12 dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
