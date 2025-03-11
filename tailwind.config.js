@@ -1,33 +1,29 @@
 module.exports = {
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
 
-    content: [
-        './index.html',
-        './src/**/*.{vue,js,ts,jsx,tsx}'
-    ],
+  theme: {
+    extend: {
+      colors: {
+        black: '#1a1d33',
+        dark: '#474b66',
+        light: '#cacee5',
+        white: '#ffffff',
+        primary: '#96e6b3',
+        secondary: '#98a2e7',
+      },
 
-    theme: {
-        
-        extend: {
-
-            colors: {
-                black: '#27303B',
-                white: '#ffffff',
-                primary: '#96e6b3',
-                secondary: '#98a2e7',
-            },
-
-            // Noise Background
-            backgroundImage: {
-                'noise': 'url("noise.png")',
-            },
-        },
-
-        fontFamily: {
-            sans: ['Poppins', 'sans-serif']
-        }
+      // Noise Background
+      backgroundImage: {
+        noise: 'url("noise.png")',
+      },
     },
 
-    darkMode: 'class',
+    fontFamily: {
+      sans: ['Poppins', 'sans-serif'],
+    },
+  },
 
-    plugins: [],
-}
+  darkMode: 'class',
+
+  plugins: [],
+};
