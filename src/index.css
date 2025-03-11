@@ -20,6 +20,8 @@
   --color-neutral-900: #1a1d33;
   --color-neutral-950: #0b0d17;
 
+  --color-accent: #98A2E7;
+
   /* Light Theme */
   --color-light-white: var(--color-neutral-000); /* Background */
   --color-light-lightest: var(--color-neutral-050); /* Background Accent */

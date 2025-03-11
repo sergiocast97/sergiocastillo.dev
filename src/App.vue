@@ -1,7 +1,7 @@
 <template>
   <main :class="isDark ? 'dark' : ''">
     <div
-      class="relative transition bg-light-background scroll-smooth selection:bg-secondary selection:text-light-darkest dark:bg-dark-darkest"
+      class="relative transition bg-light-background scroll-smooth selection:bg-accent selection:text-light-darkest dark:bg-dark-darkest"
     >
       <div class="relative z-10 h-dvh container py-8 md:py-12">
         <div class="h-full mx-auto">
