@@ -1,15 +1,13 @@
 <template>
   <main :class="isDark ? 'dark' : ''">
     <div
-      class="relative transition bg-white scroll-smooth selection:bg-primary selection:text-black dark:bg-black"
+      class="relative transition bg-light-background scroll-smooth selection:bg-secondary selection:text-light-darkest dark:bg-dark-darkest"
     >
-      <div
-        class="relative z-10 h-screen px-6 py-8 md:px-8 sm:py-12 w-full max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto"
-      >
+      <div class="relative z-10 h-dvh container md:py-12">
         <div class="h-full mx-auto">
           <div class="flex flex-col justify-between h-full gap-16">
             <header
-              class="flex items-start justify-between gap-12 sm:items-center"
+              class="flex items-start justify-between gap-12 md:items-center"
             >
               <button
                 @click="isDark = !isDark"
@@ -21,7 +19,7 @@
                 <div :class="{ hidden: !isDark }">
                   <svg
                     id="theme-toggle-dark-icon"
-                    class="w-8 h-8 text-black transition xl:w-12 xl:h-12 dark:text-white hover:text-primary dark:hover:text-secondary"
+                    class="w-8 h-8 text-light-darkest transition lg:size-12 dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +32,7 @@
                 <div :class="{ hidden: isDark }">
                   <svg
                     id="theme-toggle-light-icon"
-                    class="w-8 h-8 text-black transition xl:w-12 xl:h-12 dark:text-white hover:text-primary dark:hover:text-secondary"
+                    class="w-8 h-8 text-light-darkest transition lg:size-12 dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,16 +47,17 @@
               </button>
 
               <nav
-                class="flex flex-col gap-4 md:flex-row md:gap-12 xl:gap-16"
+                class="flex flex-col gap-4 md:flex-row md:gap-12 lg:gap-16"
                 role="navigation"
               >
                 <a
                   v-for="item in nav_items"
+                  target="_blank"
                   :key="item.title"
                   :title="item.description"
                   :aria-label="item.description"
                   :href="item.url"
-                  class="font-semibold text-black transition text-2xl lg:text-3xl dark:text-white hover:text-primary dark:hover:text-secondary"
+                  class="font-semibold text-light-darkest transition text-2xl lg:text-3xl dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
                 >
                   {{ item.title }}
                 </a>
@@ -67,12 +66,12 @@
 
             <div class="">
               <h1
-                class="text-6xl font-bold text-black transition md:text-8xl xl:text-9xl dark:text-white"
+                class="text-6xl font-bold text-light-darkest transition md:text-8xl lg:text-9xl dark:text-dark-white"
               >
                 Hi I'm Sergio
               </h1>
               <p
-                class="mt-4 md:mt-6 xl:mt-8 text-dark dark:text-light max-w-[48ch] text-base md:text-lg xl:text-2xl leading-relaxed md:leading-relaxed xl:leading-relaxed"
+                class="mt-4 md:mt-6 lg:mt-8 text-light-dark dark:text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed lg:text-2xl/relaxed"
               >
                 I'm a front-end engineer and UI Designer based in Glasgow,
                 Scotland. My passion lies in the intersection between design and
@@ -102,14 +101,9 @@ export default {
       // Nav Items
       nav_items: [
         {
-          title: 'Behance',
-          description: 'My Designs',
-          url: 'https://www.behance.net/sergiocast97',
-        },
-        {
-          title: 'GitHub',
-          description: 'My Code',
-          url: 'https://github.com/sergiocast97/',
+          title: 'BlueSky',
+          description: 'My Tweets',
+          url: 'https://bsky.app/profile/sergiocast97.bsky.social',
         },
         {
           title: 'LinkedIn',
@@ -117,9 +111,14 @@ export default {
           url: 'https://www.linkedin.com/in/sergiocast97',
         },
         {
-          title: 'BlueSky',
-          description: 'My Tweets',
-          url: 'https://bsky.app/profile/sergiocast97.bsky.social',
+          title: 'GitHub',
+          description: 'My Code',
+          url: 'https://github.com/sergiocast97/',
+        },
+        {
+          title: 'Behance',
+          description: 'My Designs',
+          url: 'https://www.behance.net/sergiocast97',
         },
       ],
     };
