@@ -14,7 +14,7 @@ export default function NavItems({ className = "" }: { className?: string }) {
         <Link
           key={item.name}
           href={item.url}
-          className="text-light-darkest dark:text-dark-white text-base font-semibold md:text-lg"
+          className="text-light-darkest dark:text-dark-white text-base font-bold md:text-3xl"
         >
           {item.name}
         </Link>

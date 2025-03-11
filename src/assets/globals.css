@@ -5,7 +5,7 @@
 @theme {
   /* Fonts */
   --font-*: initial;
-  --font-heading: Poppins, Helvetica, sans-serif, system-ui;
+  --font-heading: "Helvetica Neue", Helvetica, sans-serif, system-ui;
   --font-sans: Inter, Helvetica, sans-serif, system-ui;
 
   /* Neutral Palette */

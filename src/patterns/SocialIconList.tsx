@@ -29,7 +29,7 @@ interface IconProps {
 const BlueSkyIcon: React.FC<React.SVGProps<SVGElement>> = ({ className = "" }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={cn("h-6 w-auto", className)}
+    className={cn("h-8 w-auto", className)}
     fill="none"
     viewBox="0 0 27 25"
   >
@@ -50,7 +50,7 @@ const BlueSkyIcon: React.FC<React.SVGProps<SVGElement>> = ({ className = "" }: I
 const LinkedinIcon: React.FC<React.SVGProps<SVGElement>> = ({ className = "" }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={cn(className, "h-6 w-auto")}
+    className={cn(className, "h-8 w-auto")}
     fill="none"
     viewBox="0 0 24 25"
   >
@@ -71,7 +71,7 @@ const LinkedinIcon: React.FC<React.SVGProps<SVGElement>> = ({ className = "" }: 
 const TwitchIcon: React.FC<React.SVGProps<SVGElement>> = ({ className = "" }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={cn(className, "h-6 w-auto")}
+    className={cn(className, "h-8 w-auto")}
     fill="none"
     viewBox="0 0 21 26"
   >
@@ -90,7 +90,7 @@ const TwitchIcon: React.FC<React.SVGProps<SVGElement>> = ({ className = "" }: Ic
 const InstagramIcon: React.FC<React.SVGProps<SVGElement>> = ({ className = "" }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={cn(className, "h-6 w-auto")}
+    className={cn(className, "h-8 w-auto")}
     fill="none"
     viewBox="0 0 24 25"
   >

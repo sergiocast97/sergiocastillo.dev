@@ -11,8 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Orxata DS",
-  description: "Orxata Design System",
+  title: "Sergio Castillo",
+  description:
+    "My name is Sergio. I'm a front-end engineer and UI designer based in Glasgow, Scotland",
   icons: {
     icon: "/favicon.svg",
   },
