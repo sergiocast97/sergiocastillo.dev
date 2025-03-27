@@ -71,7 +71,7 @@
                 Hi I'm Sergio
               </h1>
               <p
-                class="mt-4 md:mt-6 lg:mt-8 text-light-dark dark:text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed lg:text-2xl/relaxed"
+                class="mt-1 md:mt-2 lg:mt-4 text-light-dark dark:text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed lg:text-2xl/relaxed"
               >
                 I'm a front-end engineer and UI Designer based in Glasgow,
                 Scotland. My passion lies in the intersection between design and
@@ -82,7 +82,7 @@
         </div>
       </div>
       <div
-        class="absolute bg-noise inset-0 z-0 bg-center bg-repeat bg-[length:200px_200px] opacity-25 pointer-events-none"
+        class="absolute bg-noise inset-0 z-0 bg-center bg-repeat bg-[length:182px_182px] opacity-10 pointer-events-none rendering-pixelated"
       ></div>
     </div>
   </main>
