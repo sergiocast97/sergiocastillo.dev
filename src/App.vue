@@ -64,14 +64,14 @@
               </nav>
             </header>
 
-            <div class="">
+            <div>
               <h1
                 class="text-6xl font-bold text-light-darkest transition md:text-8xl lg:text-9xl dark:text-dark-white"
               >
                 Hi I'm Sergio
               </h1>
               <p
-                class="mt-1 md:mt-2 lg:mt-4 text-light-dark dark:text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed lg:text-2xl/relaxed"
+                class="mt-4 text-light-dark dark:text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed lg:text-2xl/relaxed"
               >
                 I'm a front-end engineer and UI Designer based in Glasgow,
                 Scotland. My passion lies in the intersection between design and
