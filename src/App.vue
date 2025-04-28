@@ -103,7 +103,7 @@ export default {
         {
           title: 'BlueSky',
           description: 'My Tweets',
-          url: 'https://bsky.app/profile/sergiocast97.bsky.social',
+          url: 'https://bsky.app/profile/sergiocastillo.dev',
         },
         {
           title: 'LinkedIn',
