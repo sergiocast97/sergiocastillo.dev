@@ -1,7 +1,7 @@
 <template>
   <main :class="isDark ? 'dark' : ''">
     <div
-      class="relative transition bg-light-background scroll-smooth selection:bg-accent selection:text-light-darkest dark:bg-dark-darkest"
+      class="relative transition bg-light-background scroll-smooth selection:bg-dark-secondary dark:selection:bg-light-secondary selection:text-light-darkest dark:bg-dark-darkest"
     >
       <div class="relative z-10 h-dvh container py-8 md:py-12">
         <div class="h-full mx-auto">
@@ -19,7 +19,7 @@
                 <div :class="{ hidden: !isDark }">
                   <svg
                     id="theme-toggle-dark-icon"
-                    class="text-light-darkest transition size-12 dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
+                    class="text-light-darkest transition size-12 dark:text-dark-white hover:text-light-secondary dark:hover:text-dark-secondary"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
                 <div :class="{ hidden: isDark }">
                   <svg
                     id="theme-toggle-light-icon"
-                    class="text-light-darkest transition size-12 dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
+                    class="text-light-darkest transition size-12 dark:text-dark-white hover:text-light-secondary dark:hover:text-dark-secondary"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@
                   :title="item.description"
                   :aria-label="item.description"
                   :href="item.url"
-                  class="font-semibold text-light-darkest transition text-2xl lg:text-3xl dark:text-dark-white hover:text-secondary dark:hover:text-secondary"
+                  class="font-semibold text-light-darkest transition text-2xl lg:text-3xl dark:text-dark-white hover:text-light-secondary dark:hover:text-dark-secondary"
                 >
                   {{ item.title }}
                 </a>
@@ -71,10 +71,11 @@
                 Hi I'm Sergio
               </h1>
               <p
-                class="mt-4 text-light-dark dark:text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed lg:text-2xl/relaxed"
+                class="mt-4 text-light-dark dark:text-dark-lightest max-w-[40ch] text-base/relaxed md:text-lg/relaxed lg:text-2xl/relaxed"
               >
-                I'm a Software Engineer and UI Designer based in Glasgow, Scotland. 
-                I like designing and building stuff on the web - and dinosaurs.
+                I'm a Software Engineer and UI Designer based in Glasgow,
+                Scotland. I like designing and building stuff on the web - and
+                dinosaurs.
               </p>
             </div>
           </div>
