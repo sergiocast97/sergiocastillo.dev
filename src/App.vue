@@ -73,9 +73,8 @@
               <p
                 class="mt-4 text-light-dark dark:text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed lg:text-2xl/relaxed"
               >
-                I'm a front-end engineer and UI Designer based in Glasgow,
-                Scotland. My passion lies in the intersection between design and
-                development - I love designing and building things.
+                I'm a Software Engineer and UI Designer based in Glasgow, Scotland. 
+                I like designing and building stuff on the web - and dinosaurs.
               </p>
             </div>
           </div>
