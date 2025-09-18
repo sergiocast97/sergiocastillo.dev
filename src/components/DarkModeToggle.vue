@@ -3,8 +3,7 @@ import { MoonIcon, SunIcon } from '@heroicons/vue/20/solid'
 import { useDarkMode } from '@/composables/useDarkMode'
 
 const { isDark, toggleDark } = useDarkMode()
-const iconClass =
-  'text-light-darkest transition-all duration-150 size-10 dark:text-dark-white hover:text-mint dark:hover:text-lavender'
+const iconClass = 'text-light-darkest transition-all duration-150 size-10 dark:text-dark-white'
 </script>
 
 <template>
