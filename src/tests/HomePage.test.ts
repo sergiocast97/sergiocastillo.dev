@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import Homepage from '../components/HomePage.vue'
+import Homepage from '../page/HomePage.vue'
 
 describe('Homepage.vue', () => {
   it('renders the title and copy', () => {
