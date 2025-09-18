@@ -43,7 +43,7 @@ const navItems: navItem[] = [
         :title="item.description"
         :aria-label="item.description"
         :href="item.url"
-        class="font-semibold text-light-darkest transition text-2xl lg:text-3xl dark:text-dark-white hover:text-light-secondary dark:hover:text-dark-secondary"
+        class="font-semibold text-light-darkest transition text-2xl lg:text-3xl dark:text-dark-white hover:text-light-secondary dark:hover:text-dark-secondary hover:scale-105 active:scale-95"
       >
         {{ item.title }}
       </a>
