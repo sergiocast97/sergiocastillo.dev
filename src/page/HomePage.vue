@@ -9,9 +9,9 @@ const copy = `I'm a Software Engineer and UI Designer based in Glasgow, Scotland
 
 <template>
   <MainLayout>
-    <div class="flex flex-col justify-between h-full gap-16">
+    <div class="flex flex-col justify-between h-full gap-16 flex-grow">
       <TopNav />
-      <div>
+      <main>
         <h1
           class="text-6xl font-bold text-light-darkest transition md:text-8xl lg:text-9xl dark:text-dark-white"
         >
@@ -22,7 +22,7 @@ const copy = `I'm a Software Engineer and UI Designer based in Glasgow, Scotland
         >
           {{ copy }}
         </p>
-      </div>
+      </main>
     </div>
   </MainLayout>
 </template>
