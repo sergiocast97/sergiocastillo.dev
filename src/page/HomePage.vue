@@ -3,7 +3,7 @@ import TopNav from '@/components/TopNav.vue'
 import MainLayout from '@/layouts/MainLayout.vue'
 
 const title = "Hi I'm Sergio"
-const copy = `I'm a Software Engineer and UI Designer based in Glasgow, Scotland. 
+const copy = `I'm a software engineer and UI Designer based in Glasgow, Scotland. 
               I like designing and building stuff on the web - and dinosaurs.`
 </script>
 
